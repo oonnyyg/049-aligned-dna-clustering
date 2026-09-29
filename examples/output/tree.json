@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "method": "UPGMA",
+  "distance_definition": "differing sites divided by sites where both sequences are in A/C/G/T; N and gap sites are excluded per pair",
+  "height_definition": "half of the merging inter-cluster distance",
+  "tie_breaking": "lexicographic order of the two clusters' minimum identifiers",
+  "alignment_length": 7,
+  "leaf_order": [
+    "alpha",
+    "beta",
+    "delta",
+    "gamma"
+  ],
+  "leaves": [
+    {
+      "id": "alpha",
+      "description": "first reference sample",
+      "height": 0.0
+    },
+    {
+      "id": "beta",
+      "description": "nearly identical, one N site",
+      "height": 0.0
+    },
+    {
+      "id": "delta",
+      "description": "one transition relative to alpha",
+      "height": 0.0
+    },
+    {
+      "id": "gamma",
+      "description": "gap near the tail",
+      "height": 0.0
+    }
+  ],
+  "merges": [
+    {
+      "order": 1,
+      "id": "merge_1",
+      "child_ids": [
+        "alpha",
+        "beta"
+      ],
+      "child_min_identifiers": [
+        "alpha",
+        "beta"
+      ],
+      "members": [
+        "alpha",
+        "beta"
+      ],
+      "inter_cluster_distance": 0.0,
+      "height": 0.0
+    },
+    {
+      "order": 2,
+      "id": "merge_2",
+      "child_ids": [
+        "merge_1",
+        "gamma"
+      ],
+      "child_min_identifiers": [
+        "alpha",
+        "gamma"
+      ],
+      "members": [
+        "alpha",
+        "beta",
+        "gamma"
+      ],
+      "inter_cluster_distance": 0.0,
+      "height": 0.0
+    },
+    {
+      "order": 3,
+      "id": "merge_3",
+      "child_ids": [
+        "merge_2",
+        "delta"
+      ],
+      "child_min_identifiers": [
+        "alpha",
+        "delta"
+      ],
+      "members": [
+        "alpha",
+        "beta",
+        "delta",
+        "gamma"
+      ],
+      "inter_cluster_distance": 0.18888888888888888,
+      "height": 0.09444444444444444
+    }
+  ],
+  "tree": {
+    "id": "merge_3",
+    "type": "merged",
+    "height": 0.09444444444444444,
+    "branch_length": 0.0,
+    "members": [
+      "alpha",
+      "beta",
+      "delta",
+      "gamma"
+    ],
+    "children": [
+      {
+        "id": "merge_2",
+        "type": "merged",
+        "height": 0.0,
+        "branch_length": 0.09444444444444444,
+        "members": [
+          "alpha",
+          "beta",
+          "gamma"
+        ],
+        "children": [
+          {
+            "id": "merge_1",
+            "type": "merged",
+            "height": 0.0,
+            "branch_length": 0.0,
+            "members": [
+              "alpha",
+              "beta"
+            ],
+            "children": [
+              {
+                "id": "alpha",
+                "type": "leaf",
+                "height": 0.0,
+                "branch_length": 0.0,
+                "members": [
+                  "alpha"
+                ]
+              },
+              {
+                "id": "beta",
+                "type": "leaf",
+                "height": 0.0,
+                "branch_length": 0.0,
+                "members": [
+                  "beta"
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gamma",
+            "type": "leaf",
+            "height": 0.0,
+            "branch_length": 0.0,
+            "members": [
+              "gamma"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "delta",
+        "type": "leaf",
+        "height": 0.0,
+        "branch_length": 0.09444444444444444,
+        "members": [
+          "delta"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+identifier_a,identifier_b,comparable_sites,differing_sites,distance
+alpha,beta,5,0,0
+alpha,delta,6,1,0.16666666666666666
+alpha,gamma,5,0,0
+beta,delta,5,1,0.2
+beta,gamma,4,0,0
+delta,gamma,5,1,0.2

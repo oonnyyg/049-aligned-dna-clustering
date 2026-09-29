@@ -1,0 +1,9 @@
+>alpha first reference sample
+ACGTA-C
+
+>beta nearly identical, one N site
+ACGTA-N
+>gamma gap near the tail
+ACGT-AC
+>delta one transition relative to alpha
+ATGTA-C
