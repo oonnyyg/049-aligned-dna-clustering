@@ -1,0 +1,242 @@
+{
+  "method": "UPGMA (unweighted pair group method with arithmetic mean)",
+  "cluster_distance": "arithmetic mean of original pairwise distances over all cross-cluster leaf pairs",
+  "tie_breaking": "lexicographic ordered pair of each cluster's minimum identifier",
+  "identifiers": [
+    "sample_alpha",
+    "sample_beta",
+    "sample_delta",
+    "sample_gamma"
+  ],
+  "pairwise_distances": {
+    "sample_alpha|sample_beta": {
+      "numerator": 0,
+      "denominator": 1,
+      "value": 0.0
+    },
+    "sample_alpha|sample_delta": {
+      "numerator": 1,
+      "denominator": 1,
+      "value": 1.0
+    },
+    "sample_alpha|sample_gamma": {
+      "numerator": 0,
+      "denominator": 1,
+      "value": 0.0
+    },
+    "sample_beta|sample_delta": {
+      "numerator": 1,
+      "denominator": 1,
+      "value": 1.0
+    },
+    "sample_beta|sample_gamma": {
+      "numerator": 0,
+      "denominator": 1,
+      "value": 0.0
+    },
+    "sample_delta|sample_gamma": {
+      "numerator": 1,
+      "denominator": 1,
+      "value": 1.0
+    }
+  },
+  "merges": [
+    {
+      "step": 1,
+      "left": {
+        "members": [
+          "sample_alpha"
+        ],
+        "min_identifier": "sample_alpha"
+      },
+      "right": {
+        "members": [
+          "sample_beta"
+        ],
+        "min_identifier": "sample_beta"
+      },
+      "cluster_distance": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "node_height": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      }
+    },
+    {
+      "step": 2,
+      "left": {
+        "members": [
+          "sample_alpha",
+          "sample_beta"
+        ],
+        "min_identifier": "sample_alpha"
+      },
+      "right": {
+        "members": [
+          "sample_gamma"
+        ],
+        "min_identifier": "sample_gamma"
+      },
+      "cluster_distance": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "node_height": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      }
+    },
+    {
+      "step": 3,
+      "left": {
+        "members": [
+          "sample_alpha",
+          "sample_beta",
+          "sample_gamma"
+        ],
+        "min_identifier": "sample_alpha"
+      },
+      "right": {
+        "members": [
+          "sample_delta"
+        ],
+        "min_identifier": "sample_delta"
+      },
+      "cluster_distance": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "node_height": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      }
+    }
+  ],
+  "tree": {
+    "type": "internal",
+    "min_identifier": "sample_alpha",
+    "height": {
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5
+    },
+    "branch_length": {
+      "numerator": 0,
+      "denominator": 1,
+      "value": 0.0
+    },
+    "members": [
+      "sample_alpha",
+      "sample_beta",
+      "sample_delta",
+      "sample_gamma"
+    ],
+    "children": [
+      {
+        "type": "internal",
+        "min_identifier": "sample_alpha",
+        "height": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0.0
+        },
+        "branch_length": {
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        },
+        "members": [
+          "sample_alpha",
+          "sample_beta",
+          "sample_gamma"
+        ],
+        "children": [
+          {
+            "type": "internal",
+            "min_identifier": "sample_alpha",
+            "height": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "branch_length": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "members": [
+              "sample_alpha",
+              "sample_beta"
+            ],
+            "children": [
+              {
+                "type": "leaf",
+                "identifier": "sample_alpha",
+                "height": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "value": 0.0
+                },
+                "branch_length": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "value": 0.0
+                }
+              },
+              {
+                "type": "leaf",
+                "identifier": "sample_beta",
+                "height": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "value": 0.0
+                },
+                "branch_length": {
+                  "numerator": 0,
+                  "denominator": 1,
+                  "value": 0.0
+                }
+              }
+            ]
+          },
+          {
+            "type": "leaf",
+            "identifier": "sample_gamma",
+            "height": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            },
+            "branch_length": {
+              "numerator": 0,
+              "denominator": 1,
+              "value": 0.0
+            }
+          }
+        ]
+      },
+      {
+        "type": "leaf",
+        "identifier": "sample_delta",
+        "height": {
+          "numerator": 0,
+          "denominator": 1,
+          "value": 0.0
+        },
+        "branch_length": {
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+id_a,id_b,comparable_sites,differences,distance
+sample_alpha,sample_beta,7,0,0.0
+sample_alpha,sample_delta,8,8,1.0
+sample_alpha,sample_gamma,8,0,0.0
+sample_beta,sample_delta,7,7,1.0
+sample_beta,sample_gamma,7,0,0.0
+sample_delta,sample_gamma,8,8,1.0

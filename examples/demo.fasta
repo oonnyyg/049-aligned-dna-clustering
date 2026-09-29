@@ -1,0 +1,8 @@
+>sample_alpha first example, has an N near the end
+ACGTACGT-N
+>sample_beta gap and N overlap sample_alpha early
+AC-TACGTNN
+>sample_gamma identical to sample_alpha except description
+ACGTACGT-N
+>sample_delta outgroup-like sequence
+TGCATGCAAC
